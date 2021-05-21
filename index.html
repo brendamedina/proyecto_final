@@ -5,34 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <div>
-                <img src="" alt="">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
             </div>
 
-            <div>
+            <div class="menu">
                 <ul>
-                    <li>Home</li>
-                    <li>Types</li>
-                    <li>Aromas</li>
-                    <li>Taste</li>
-                    <li>Glossary</li>
-                    <li>Contact</li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#types">TYPES</a></li>
+                    <li><a href="#aromas">AROMAS</a></li>
+                    <li><a href="#taste">TASTE</a></li>
+                    <li><a href="#glossary">GLOSSARY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
 
-            <div>
-                <img src="" alt=""><img src="" alt=""><img src="" alt="">
+            <div class="nav-icons">
+                <a href="https://outlook.live.com/owa/" target="_blank"><img src="images/nav_mail.png" alt="" class="nav-mail"></a><a href="https://www.facebook.com" target="_blank"><img src="images/nav_fb.png" alt="" class="nav-fb"></a><a href="https://www.instagram.com" target="_blank"><img src="images/nav_ig.png" alt=""></a>
             </div>
         </nav>
     </header>
 
     <main>
-        <div class="home">
-            <div>
+        <div id="home">
+            <div class="wine">
                 <h1>What is wine?</h1>
                 <p>
                     Wine is defined for legal purposes as “a water and alcohol 
@@ -44,11 +45,11 @@
                 </p>
             </div>
 
-            <div>
-                <img src="" alt="">
+            <div class="img-container">
+                <img src="images/home.png" alt="">
             </div>
 
-            <div>
+            <div class="composition">
                 <h4>Composition</h4>
                 <p>
                     The basic ingredients of wine are water and alcohol, 
@@ -65,162 +66,455 @@
                     <br> Aromatic substances (0.01%-0.1%)
                 </p>
             </div>
+        </div>
 
-            <div class="types">
-                <h1>Types of wine</h1>
-                <div class="full-red">
-                    <div>
-                        <h4>Full-bodied red wines</h4>
-                        <p class="parenthesis">(CABERNET SAUVIGNON, SYRAH, 
-                            <br> CABERNET FRANC)
-                        </p>
-                        <p>
-                            <br> They have more tannins and are richer in alcohol 
-                            <br> content. The tannins are felt at the back of your 
-                            <br> tongue as a grippy sensation that dries your 
-                            <br> mouth and pulls it together. 
-                        </p>
-                        <p class="more">Ver más...</p>
-                    </div>
-                    <div>
-                        <img src="" alt="">
+        <div id="types">
+            <h1>Types of wine</h1>
+            <div class="container-left full-red">
+                <div class="info-left">
+                    <h4>Full-bodied red wines</h4>
+                    <p class="parenthesis">(CABERNET SAUVIGNON, SYRAH, 
+                        <br> CABERNET FRANC)
+                    </p>
+                    <p>
+                        <br> They have more tannins and are richer in alcohol 
+                        <br> content. The tannins are felt at the back of your 
+                        <br> tongue as a grippy sensation that dries your 
+                        <br> mouth and pulls it together. 
+                    </p>
+                    <br>
+                    <p> <a href="#more"> Ver más...</a></p>
+                    <div id="more" class="overlay">
+                        <div id="popup-body">
+                            <a id="close" href="#">&times;</a>
+                            <h4>Full-bodied red wines</h4>
+                            <div class="popup-content">
+                                <p class="parenthesis">(CABERNET SAUVIGNON, SYRAH, 
+                                    <br> CABERNET FRANC)
+                                </p>
+                                <p>
+                                    <br> They have more tannins and are richer in alcohol 
+                                    <br> content. The tannins are felt at the back of your 
+                                    <br> tongue as a grippy sensation that dries your 
+                                    <br> mouth and pulls it together.
+                                    <br> They come from grape skins and seeds as well 
+                                    <br> as from the wine being stored in new wooden barrels.
+                                    <br> Powerful as they are overall, you should pair them 
+                                    <br> with foods of equal strength, such as a nice 
+                                    <br> juicy beefsteak. You should also serve them 
+                                    <br> in large-bowled glasses to fully capture 
+                                    <br> their aromas and flavours.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div>
+                    <img src="images/types_full_red.png" alt="">
+                </div>
+            </div>
+    
+            <div class="container-right med-red">
+                <div>
+                    <img src="images/types_med_red.png" alt="">
+                </div>
+                <div class="info-right">
+                    <h4>Medium-bodied red wines</h4>
+                    <p class="parenthesis">(MERLOT, BARBERA)</p>
+                    <p>
+                        <br> Best known for being a great accompaniment to 
+                        <br> almost any food. If you’re not too fond of full- 
+                        <br> bodied wines, you can pair medium-bodied reds
+                        <br> with heavier foods just as well.  
+                    </p>
+                    <br>
+                    <p class="more">Ver más...</p>
+                </div>
+            </div> 
+    
+            <div class="container-left">
+                <div class="info-left">
+                    <h4>Light-bodied red wines</h4>
+                    <p class="parenthesis">(PINOT NOIR, GAMAY, BLAUFRÄNKISCH)</p>
+                    <p>
+                        <br> The lightest of the reds are made from brighter,  
+                        <br> thinner skinned grapes and have the least  
+                        <br> tannins. Still, they can be paired with many
+                        <br> foods, such as cheese.  
+                    </p>
+                    <br>
+                    <p class="more">Ver más...</p>
+                </div>
+                <div>
+                    <img src="images/types_light_red.png" alt="">
+                </div>
+            </div>
+    
+            <div class="container-right">
+                <div>
+                    <img src="images/types_rose.png" alt="">
+                </div>
+                <div class="info-right">
+                    <h4>Rosé wines</h4>
+                    <p class="parenthesis">(GRENACHE, SANGIOVESE, MOURVÈDRE)</p>
+                    <p>
+                        <br> The middle ground between red and white wine 
+                        <br> is called a Rosé – your perfect summer wine.
+                        <br> Rosé pairs flawlessly with spicier foods, such as
+                        <br> Thai or Mexican.  
+                    </p>
+                    <br>
+                    <p class="more">Ver más...</p>
+                </div>
+            </div> 
+    
+            <div class="container-left">
+                <div class="info-left">
+                    <h4>Full-bodied white wines</h4>
+                    <p class="parenthesis">(OAKED CHARDONNAY, RIBOLLA GIALLA)</p>
+                    <p>
+                        <br> These are usually wines that had undergone   
+                        <br> ageing in oak barrels and a second, malolactic, 
+                        <br> fermentation. The most typical representative of
+                        <br> full-bodied white wine is Chardonnay.   
+                    </p>
+                    <br>
+                    <p class="more">Ver más...</p>
+                </div>
+                <div>
+                    <img src="images/types_full_white.png" alt="">
+                </div>
+            </div>
+    
+            <div class="container-right">
+                <div>
+                    <img src="images/types_light_white.png" alt="">
+                </div>
+                <div class="info-right">
+                    <h4>Light-bodied white wines</h4>
+                    <p class="parenthesis">
+                        (SAUVIGNON BLANC, ZELEN, PINELA, 
+                        <br> PINOT GRIS, RIESLING ITALICO)
+                    </p>
+                    <p>
+                        <br> Crisp dry wines that are a prime choice for those 
+                        <br> who enjoy a touch of liveliness on the tongue.
+                        <br> You will enjoy them the most in hot weather
+                        <br> along with a fresh salad or sushi.  
+                    </p>
+                    <br>
+                    <p class="more">Ver más...</p>
+                </div>
+            </div> 
+                    
+            <div class="container-left">
+                <div class="info-left">
+                    <h4>Dessert & fortified wines</h4>
+                    <p class="parenthesis">
+                        (VINJAK, PORT, SHERRY, MADEIRA, NOBLE 
+                        <br> ROT, STRAW WINE, ICE WINE)
+                    </p>
+                    <p>
+                        <br> Winemakers are able to preserve the natural   
+                        <br> sweetness of wine by stopping the fermentation 
+                        <br> before the yeasts have had a chance to eat up all 
+                        <br> the sugar.    
+                    </p>
+                    <br>
+                    <p class="more">Ver más...</p>
+                </div>
+                <div>
+                    <img src="images/types_dessert.png" alt="">
+                </div>
+            </div>
+    
+            <div class="container-right">
+                <div>
+                    <img src="images/types_sparkling.png" alt="">
+                </div>
+                <div class="info-right">
+                    <h4>Sparkling wines</h4>
+                    <p class="parenthesis">
+                        (CHAMPAGNE, CAVA, PROSECCO,  
+                        <br> MÉTHODE CLASSIQUE, PENINA, SEKT
+                        <br> LAMBRUSCO) 
+                    </p>
+                    <p>
+                        <br> If made by the traditional method, the bubbles in  
+                        <br> sparkling wine are a consequence of secondary 
+                        <br> fermentation in a bottle or a steel tank. 
+                    </p>
+                    <br>
+                    <p class="more">Ver más...</p>
+                </div>
+            </div> 
+        </div>
 
-                <div class="med-red">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h4>Medium-bodied red wines</h4>
-                        <p class="parenthesis">(MERLOT, BARBERA)</p>
-                        <p>
-                            <br> Best known for being a great accompaniment to 
-                            <br> almost any food. If you’re not too fond of full- 
-                            <br> bodied wines, you can pair medium-bodied reds
-                            <br> with heavier foods just as well.  
-                        </p>
-                        <p class="more">Ver más...</p>
-                    </div>
-                </div> 
-
-                <div class="light-red">
-                    <div>
-                        <h4>Light-bodied red wines</h4>
-                        <p class="parenthesis">(PINOT NOIR, GAMAY, BLAUFRÄNKISCH)</p>
-                        <p>
-                            <br> The lightest of the reds are made from brighter,  
-                            <br> thinner skinned grapes and have the least  
-                            <br> tannins. Still, they can be paired with many
-                            <br> foods, such as cheese.  
-                        </p>
-                        <p class="more">Ver más...</p>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                    </div>
+        <div id="aromas">
+            <h1>Aromas</h1>
+            <h3>Primary</h3>
+            <p class="desc">This is all about the initial smells and aromas considered to emerge from the grape variety itself.</p>
+            <div class="primary">
+                <div class="floral">
+                    <img src="images/aromas_floral.png" alt="">
+                    <h4>Floral</h4>
+                    <p class="parenthesis">
+                        (JASMINE, ROSE, LILAC, ORANGE
+                        <br> BLOSSOM, ACACIA FLOWER, VIOLETS)
+                    </p>
+                    <p>
+                        <br> Wine description often include terms such as
+                        <br> “floral notes”. Some varietals are known for
+                        <br> specific floral smells… 
+                    </p>
+                    <p class="more">Ver más...</p>
                 </div>
 
-                <div class="rose">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h4>Rosé wines</h4>
-                        <p class="parenthesis">(GRENACHE, SANGIOVESE, MOURVÈDRE)</p>
-                        <p>
-                            <br> The middle ground between red and white wine 
-                            <br> is called a Rosé – your perfect summer wine.
-                            <br> Rosé pairs flawlessly with spicier foods, such as
-                            <br> Thai or Mexican.  
-                        </p>
-                        <p class="more">Ver más...</p>
-                    </div>
-                </div> 
-
-                <div class="full-white">
-                    <div>
-                        <h4>Full-bodied white wines</h4>
-                        <p class="parenthesis">(OAKED CHARDONNAY, RIBOLLA GIALLA)</p>
-                        <p>
-                            <br> These are usually wines that had undergone   
-                            <br> ageing in oak barrels and a second, malolactic, 
-                            <br> fermentation. The most typical representative of
-                            <br> full-bodied white wine is Chardonnay.   
-                        </p>
-                        <p class="more">Ver más...</p>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                    </div>
+                <div class="vegetal">
+                    <img src="images/aromas_vegetal.png" alt="">
+                    <h4>Vegetal</h4>
+                    <p class="parenthesis">
+                        (PEPPER, CUT GRASS, HAY, EUCALYPTUS)
+                    </p>
+                    <p>
+                        <br> A wine that tastes predominantly ‘vegetal’ or
+                        <br> ‘green’ often has flaws. These may point to
+                        <br> problems in the winemaking process, such as the
+                        <br> vinification of underripe grapes.  
+                    </p>
+                    <p class="more">Ver más...</p>
                 </div>
 
-                <div class="light-white">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h4>Light-bodied white wines</h4>
-                        <p class="parenthesis">
-                            (SAUVIGNON BLANC, ZELEN, PINELA, 
-                            <br> PINOT GRIS, RIESLING ITALICO)
-                        </p>
-                        <p>
-                            <br> Crisp dry wines that are a prime choice for those 
-                            <br> who enjoy a touch of liveliness on the tongue.
-                            <br> You will enjoy them the most in hot weather
-                            <br> along with a fresh salad or sushi.  
-                        </p>
-                        <p class="more">Ver más...</p>
-                    </div>
-                </div> 
-                
-                <div class="dessert">
-                    <div>
-                        <h4>Dessert & fortified wines</h4>
-                        <p class="parenthesis">
-                            (VINJAK, PORT, SHERRY, MADEIRA, NOBLE 
-                            <br> ROT, STRAW WINE, ICE WINE)
-                        </p>
-                        <p>
-                            <br> Winemakers are able to preserve the natural   
-                            <br> sweetness of wine by stopping the fermentation 
-                            <br> before the yeasts have had a chance to eat up all 
-                            <br> the sugar.    
-                        </p>
-                        <p class="more">Ver más...</p>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                    </div>
+                <div class="fruity">
+                    <img src="images/aromas_fruity.png" alt="">
+                    <h4>Fruity</h4>
+                    <p class="parenthesis">
+                        (PASSION FRUIT, PEAR, PEACH,
+                        <br> APRICOT, STRAWBERRY)
+                    </p>
+                    <p>
+                        <br> Fruit flavors in red wines typically fall into two
+                        <br> different categories: red fruit and black fruit 
+                        <br> flavors. Wines with more “black fruit” flavors
+                        <br> tend to be more full-bodied.  
+                    </p>
+                    <p class="more">Ver más...</p>
                 </div>
 
-                <div class="sparkling">
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h4>Sparkling wines</h4>
-                        <p class="parenthesis">
-                            (CHAMPAGNE, CAVA, PROSECCO,  
-                            <br> MÉTHODE CLASSIQUE, PENINA, SEKT
-                            <br> LAMBRUSCO) 
-                        </p>
-                        <p>
-                            <br> If made by the traditional method, the bubbles in  
-                            <br> sparkling wine are a consequence of secondary 
-                            <br> fermentation in a bottle or a steel tank. 
-                        </p>
-                        <p class="more">Ver más...</p>
-                    </div>
-                </div> 
+                <div class="mineral">
+                    <img src="images/aromas_mineral.png" alt="">
+                    <h4>Mineral</h4>
+                    <p class="parenthesis">
+                        (PITCH, WET SLATE, GRANITE, PENCIL
+                        <br> POINT)
+                    </p>
+                    <p>
+                        <br> This common description can be used to describe
+                        <br> both red and white wines, although it is more 
+                        <br> common with whites.  
+                    </p>
+                    <p class="more">Ver más...</p>
+                </div>
+            </div> 
+
+            <div class="secondary">
+                <h3>Secondary</h3>
+                <div>
+                    <div class="container-one"><img src="images/aromas_secondary1.png" alt=""></div><div class="container-two"><img src="images/aromas_secondary2.png" alt=""></div>
+                </div>  
+                <p class="parenthesis">(BREAD, YEAST CHEESE, MUSHROOM, BEER)</p>
+                <p>
+                    <br> Secondary aromas in wine emerge from the fermentation process. Fermentation in wine is catalysed
+                    <br> by a species of yeast known as Saccharomyces cerevisiae, which is also known as brewer’s and baker’s 
+                    <br> yeast. These can include… 
+                </p>
+                <p class="more">Ver más</p>
             </div>
 
+            <div class="tertiary">
+                <h3>Tertiary</h3>
+                <div>
+                    <div class="container-one"><img src="images/aromas_tertiary1.png" alt=""></div><div class="container-two"><img src="images/aromas_tertiary2.png" alt=""></div>
+                </div>
+                <p class="parenthesis">(LEATHER, TOASTED, COFFEE, ALMONDS, WALNUTS)</p>
+                <p>
+                    <br> Tertiary aroma (or its synonym ‘bouquet’) is used when the aromas are due to aging.
+                    <br> These aromas are complex and give the wine great uniqueness. It is possible to differentiate between 
+                    <br> oxidation aromas -depending on contact with oxygen- and reduction aromas -produced 
+                    <br> during bottle aging.
+                </p>
+                <p class="more">Ver más</p>
+            </div>
+        </div>
+
+        <div id="taste">
+            <h1>Taste</h1>
+            <div class="containers">
+                <div class="sweetness">
+                    <img src="images/taste_sweetness.png" alt="">
+                    <h4>Sweetness</h4>
+                    <p>
+                        Wines can range from bone dry to very sweet.
+                        <br> Wines can range from bone dry to very sweet.
+                        <br> Traditionally wines are made to be dry or off-dry
+                        <br> with the exception of late-harvest and dessert 
+                        <br> wines. Sweetness can add body to a wine.
+                        <br> A wine that is fruit forward is often confused with
+                        <br> a sweet wine.
+                    </p>
+                    <p class="more">Ver más...</p>
+                </div>
+    
+                <div class="acidity">
+                    <img src="images/taste_acidity.png" alt="">
+                    <h4>Acidity</h4>
+                    <p>
+                        The acidity in a wine plays a very important role.
+                        <br> Most wines are fairly acidic. You can tell how
+                        <br> much acidity is in wine by how much you salivate 
+                        <br> after you drink it. The acidity will take crisp,  
+                        <br> zesty, and often create citrus or unripe
+                        <br> fruit flavors. 
+                    </p>
+                    <p class="more">Ver más...</p>
+                </div>
+    
+                <div class="tannin">
+                    <img src="images/taste_tannin.png" alt="">
+                    <h4>Tannin</h4>
+                    <p>
+                        Tannin is a substance that exists naturally in the
+                        <br> skins, seeds (or pips), and stems of grapes.
+                        <br> Tannins can often be confused with the dryness
+                        <br> of the wine because they dry out your mouth. 
+                        <br> They can taste bitter and herbaceous.
+                    </p>
+                    <p class="more">Ver más...</p>
+                </div>
+    
+                <div class="alcohol">
+                    <img src="images/taste_acohol.png" alt="">
+                    <h4>Alcohol</h4>
+                    <p>
+                        Typically, white wines have a lower alcohol level
+                        <br> than red wines and some dessert wines can have
+                        <br> up to 40% alcohol. Most white wines are in the
+                        <br> 8-11% alcohol range while most red wines are in 
+                        <br> the 11-13% range.
+                    </p>
+                    <p class="more">Ver más...</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="glossary">
+            <h1>Glossary</h1>
+            <table class="center">
+                <tr>
+                    <td class="term">Aeration</td>
+                    <td class="def">
+                        The process of wine being exposed to air causing the wine to absorb oxygen and
+                        <br> release the wine’s aroma and flavor. This process also dilutes some alcohol vapors,
+                        <br> which allows for the subtler aspects of a wine to become more apparent.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="term">Balance</td>
+                    <td class="def">
+                        When a wine is referred to as balanced it means that the flavor profiles of the wine
+                        <br> —sweet, fruit, alcohol—are evenly present and proportional to the wines tannins 
+                        <br> and acid.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="term">Body</td>
+                    <td class="def"> 
+                        A wines body refers to the complexity of the flavors and also to the weight of a
+                        <br> wine. Heavier red wines, with lots of flavors are said to have more body than lighter
+                        <br> bodied red wine that may have not been aged as long, or is made from grapes that
+                        <br> were harvested earlier. 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="term">Corked</td>
+                    <td class="def">
+                        Used to describe a wine that has been spoiled or “turned.” Originally used when
+                        <br> preservation methods had failed due to an issue with a bottle’s cork.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="term">Cru</td>
+                    <td class="def">
+                        Is a French term meaning “growth.” It is used to refer to a growing area like a single
+                        <br> vineyard or a collection of vineyards and the vines where the grapes were grown. It
+                        <br> is another indicator of quality. It is commonly seen in the term “Grand Cru” and is
+                        <br> used when referring to a wine produced from an area with a good reputation. 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="term">Decant</td>
+                    <td class="def">
+                        Refers to the process of separating a wine from the sediments found in a wine
+                        <br> bottle. A decanter is a separate vessel that wine is poured into and served from. This
+                        <br> also helps with the aeration process. 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="term">Esters</td>
+                    <td class="def">
+                        A term heard during wine tastings that refer to chemical compounds that give a
+                        <br> wine its aroma. 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="term">Legs</td>
+                    <td class="def">
+                        The liquid that clings in streaks to a wine glass when a wine is swirled or sipped. 
+                        <br> Can indicate alcohol levels.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="term">Nouveau</td>
+                    <td class="def"> 
+                        A term referring to a light and fruity young wine. Young wine refers to grapes that 
+                        <br> are harvested earlier, which doesn’t allow the complex flavors and sugars that 
+                        <br> develop during a longer growing period. 
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="contact">
+            <h1>Contact</h1>
+            <div class="sm">
+                <h4>Follow us on our social media.</h4>
+                <div class="sm-gallery">
+                    <img src="images/contact_sm1.png" alt=""><img src="images/contact_sm2.png" alt=""><img src="images/contact_sm3.png" alt="">
+                    <img src="images/contact_sm4.png" alt=""><img src="images/contact_sm5.png" alt=""><img src="images/contact_sm6.png" alt="">
+                    <img src="images/contact_sm7.png" alt=""><img src="images/contact_sm8.png" alt=""><img src="images/contact_sm9.png" alt="">
+                </div>
+                <div class="icons">
+                    <a href="https://outlook.live.com/owa/" target="_blank"><img src="images/contact_mail.png" alt=""></a><a href="https://www.facebook.com" target="_blank"><img src="images/contact_fb.png" alt=""></a><a href="https://www.instagram.com/" target="_blank"><img src="images/contact_ig.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="newsletter">
+                <h4>Subscribe to our news letter!</h4>
+                <form action="">
+                    <label for="">First name or full name</label>
+                    <br><input type="text" class="text">
+                    <br><label for="">Email</label>
+                    <br><input type="text" class="text">
+                    <br><label for=""><input type="checkbox">&nbsp; By continuing, you accept the privacy policy.</label>
+                    <br><input type="submit" value="Subscribe" class="subscribe">
+                </form>
+            </div>
+            <div class="vineyard"><img src="images/contact_vineyard.png" alt=""></div>  
         </div>
     </main>
 
     <footer>
-
+        <p>WINETIME 2021</p>
     </footer>
 </body>
 </html>
